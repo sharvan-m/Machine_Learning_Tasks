@@ -8,7 +8,7 @@
 [![NLP](https://img.shields.io/badge/NLP-TF--IDF%20%7C%20LinearSVC-green)](#-task-1---movie-genre-classification)
 [![License](https://img.shields.io/badge/License-MIT-lightgrey)](#-license)
 
-**A collection of production-grade Machine Learning and Natural Language Processing solutions. Features modular pipelines, pre-trained model artifacts, and interactive prediction CLIs.**
+**A collection of production-grade Machine Learning and Natural Language Processing solutions. Features end-to-end pipelines, pre-trained model artifacts, and interactive real-time prediction CLIs.**
 
 [Overview](#-overview) • [Task 1: Movie Genre](#-task-1---movie-genre-classification) • [Task 2: Customer Churn](#-task-2---customer-churn-prediction) • [Task 3: SMS Spam](#-task-3---sms-spam-detection) • [Tech Stack](#-technology-stack) • [Repository Structure](#-repository-structure) • [Quick Start](#-quick-start)
 
@@ -18,8 +18,8 @@
 
 ## 📖 Overview
 
-This repository holds end-to-end Machine Learning pipelines covering text classification, customer analytics, and spam filtering. Each project is engineered with:
-- **Portable Architecture:** Relative project paths allow seamless execution across any OS without hardcoded dependencies.
+This repository holds end-to-end Machine Learning pipelines engineered for classification, customer analytics, and natural language understanding. Each project is built with:
+- **Portable Architecture:** Relative project paths allow execution across any environment without hardcoded absolute paths.
 - **Model Persistence:** Serialized `.joblib` pipelines bundling feature extraction and trained estimators for immediate zero-training inference.
 - **Interactive CLI Interfaces:** Dedicated `predict.py` scripts enabling real-time terminal testing with custom inputs.
 
@@ -37,7 +37,7 @@ This repository holds end-to-end Machine Learning pipelines covering text classi
 
 ## 🎬 Task 1 - Movie Genre Classification
 
-Predicts a movie's genre based purely on its plot synopsis and title.
+Predicts a movie's genre based on its plot synopsis and title.
 
 ```
 [Movie Title + Description] ──► [TF-IDF Vectorizer (ngram 1-2)] ──► [LinearSVC Classifier] ──► [Predicted Genre]
@@ -46,7 +46,7 @@ Predicts a movie's genre based purely on its plot synopsis and title.
 - **Objective:** Multi-class classification across **27 distinct genres** (Drama, Comedy, Thriller, Action, Sci-Fi, etc.).
 - **Dataset:** 54,214 plot summaries from IMDb.
 - **Model Pipeline:** Sublinear TF-IDF vectorization with stopword filtering coupled with a Support Vector Classifier (`LinearSVC`).
-- **Validation Accuracy:** **57.26%** (strong performance over a 27-class baseline).
+- **Validation Accuracy:** **57.26%** (high performance across 27 classes).
 - **Interactive CLI:**
   ```bash
   cd Task-1-Movie-Genre-Classification
@@ -57,14 +57,14 @@ Predicts a movie's genre based purely on its plot synopsis and title.
 
 ## 📉 Task 2 - Customer Churn Prediction
 
-Identifies bank clients at risk of discontinuing their accounts to enable proactive retention campaigns.
+Identifies bank clients at risk of leaving the institution to enable data-driven customer retention.
 
 ```
 [Client Demographics & Account Metrics] ──► [Feature Scaler & Encoder] ──► [Random Forest Ensemble] ──► [Churn Risk (0 / 1)]
 ```
 
 - **Features Analyzed:** Credit Score, Geography, Gender, Age, Tenure, Account Balance, Number of Products, Credit Card Ownership, Active Member Status, Estimated Salary.
-- **Dataset:** 10,000 real-world banking records.
+- **Dataset:** 10,000 real-world banking records (`Churn_Modelling.csv`).
 - **Algorithm:** **Random Forest Classifier** with balanced class weights and decision tree bagging.
 - **Accuracy:** **84.10%**.
 - **Interactive CLI:**
@@ -77,13 +77,13 @@ Identifies bank clients at risk of discontinuing their accounts to enable proact
 
 ## 📱 Task 3 - SMS Spam Detection
 
-Filters mobile SMS messages into **ham** (legitimate) or **spam** to protect users against phishing and automated spam.
+Filters mobile SMS messages into **ham** (legitimate) or **spam** using sparse text representation.
 
 ```
 [Raw SMS Text] ──► [Text Preprocessing & TF-IDF] ──► [Linear Support Vector Classifier] ──► [Ham / Spam Flag]
 ```
 
-- **Dataset:** 5,572 labeled mobile text messages.
+- **Dataset:** 5,572 labeled mobile text messages (`spam.csv`).
 - **Architecture:** Term Frequency-Inverse Document Frequency (TF-IDF) feature weighting with Linear SVM.
 - **Accuracy:** **98.74%** with near-zero false-positive rates on legitimate messages.
 - **Interactive CLI:**
@@ -99,10 +99,10 @@ Filters mobile SMS messages into **ham** (legitimate) or **spam** to protect use
 | Library / Tool | Purpose |
 | :--- | :--- |
 | **[Python 3.12](https://www.python.org/)** | Runtime environment |
-| **[Scikit-Learn](https://scikit-learn.org/)** | Estimators (`LinearSVC`, `RandomForestClassifier`), metrics, and pipelines |
+| **[Scikit-Learn](https://scikit-learn.org/)** | Estimators (`LinearSVC`, `RandomForestClassifier`), metrics, and feature pipelines |
 | **[Pandas](https://pandas.pydata.org/)** | Tabular data manipulation, cleaning, and preprocessing |
-| **[NumPy](https://numpy.org/)** | Efficient multidimensional array computations |
-| **[Joblib](https://joblib.readthedocs.io/)** | High-performance serialization and deserialization of trained models |
+| **[NumPy](https://numpy.org/)** | Multidimensional array computations |
+| **[Joblib](https://joblib.readthedocs.io/)** | High-performance serialization and deserialization of trained model pipelines |
 
 ---
 
@@ -154,7 +154,7 @@ python -m venv venv
 ```
 
 ### 3. Run Any Task
-Navigate to the desired project directory and install dependencies:
+Navigate to any task directory and install dependencies:
 ```bash
 # Example: Running the SMS Spam Detector
 cd Task-3-SMS-Spam-Detection
