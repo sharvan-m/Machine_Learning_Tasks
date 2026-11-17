@@ -2,7 +2,7 @@
 
 # Machine Learning & NLP Internship Tasks
 
-[![GitHub Repo](https://img.shields.io/badge/GitHub-sharvan--m%2FMachine_Learning__tasks-blue?logo=github)](https://github.com/sharvan-m/Machine_Learning_tasks)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-sharvan--m%2FMachine_Learning__tasks-blue?logo=github)](https://github.com/sharvan-m/Machine_Learning_Tasks)
 [![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)](https://www.python.org/)
 [![Scikit-Learn](https://img.shields.io/badge/ML-Scikit--Learn%20%7C%20Pandas-orange?logo=scikitlearn)](https://scikit-learn.org/)
 [![NLP](https://img.shields.io/badge/NLP-TF--IDF%20%7C%20LinearSVC-green)](#-task-1---movie-genre-classification)
@@ -18,7 +18,7 @@
 
 ## 📖 Overview
 
-This repository holds end-to-end Machine Learning pipelines built for the ** Data Science & Machine Learning Internship**. Each project is engineered with:
+This repository holds end-to-end Machine Learning pipelines built for the **Data Science & Machine Learning Internship**. Each project is engineered with:
 - **Portable Architecture:** Relative project paths allow seamless execution across any OS without hardcoded dependencies.
 - **Model Persistence:** Serialized `.joblib` pipelines bundling feature extraction and trained estimators for immediate zero-training inference.
 - **Interactive CLI Interfaces:** Dedicated `predict.py` scripts enabling real-time terminal testing with custom inputs.
