@@ -2,7 +2,7 @@
 
 # Machine Learning & NLP Internship Tasks
 
-[![GitHub Repo](https://img.shields.io/badge/GitHub-sharvan--m%2FMachine_Learning__tasks-blue?logo=github)](https://github.com/sharvan-m/Machine_Learning_Tasks)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-sharvan--m%2FMachine_Learning_Tasks-blue?logo=github)](https://github.com/sharvan-m/Machine_Learning_Tasks)
 [![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)](https://www.python.org/)
 [![Scikit-Learn](https://img.shields.io/badge/ML-Scikit--Learn%20%7C%20Pandas-orange?logo=scikitlearn)](https://scikit-learn.org/)
 [![NLP](https://img.shields.io/badge/NLP-TF--IDF%20%7C%20LinearSVC-green)](#-task-1---movie-genre-classification)
