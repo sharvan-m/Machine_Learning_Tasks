@@ -18,7 +18,7 @@
 
 ## 📖 Overview
 
-This repository holds end-to-end Machine Learning pipelines built for the **Machine_Learning Data Science & Machine Learning Internship**. Each project is engineered with:
+This repository holds end-to-end Machine Learning pipelines built for the ** Data Science & Machine Learning Internship**. Each project is engineered with:
 - **Portable Architecture:** Relative project paths allow seamless execution across any OS without hardcoded dependencies.
 - **Model Persistence:** Serialized `.joblib` pipelines bundling feature extraction and trained estimators for immediate zero-training inference.
 - **Interactive CLI Interfaces:** Dedicated `predict.py` scripts enabling real-time terminal testing with custom inputs.
