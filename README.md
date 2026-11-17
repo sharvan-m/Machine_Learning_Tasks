@@ -1,14 +1,14 @@
 <div align="center">
 
-# CODSOFT: Machine Learning & NLP Internship Projects
+# Machine Learning & NLP Internship Tasks
 
-[![GitHub Repo](https://img.shields.io/badge/GitHub-sharvan--m%2Fcodsoft__tasks-blue?logo=github)](https://github.com/sharvan-m/codsoft_tasks)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-sharvan--m%2FMachine_Learning__tasks-blue?logo=github)](https://github.com/sharvan-m/Machine_Learning_tasks)
 [![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)](https://www.python.org/)
 [![Scikit-Learn](https://img.shields.io/badge/ML-Scikit--Learn%20%7C%20Pandas-orange?logo=scikitlearn)](https://scikit-learn.org/)
 [![NLP](https://img.shields.io/badge/NLP-TF--IDF%20%7C%20LinearSVC-green)](#-task-1---movie-genre-classification)
 [![License](https://img.shields.io/badge/License-MIT-lightgrey)](#-license)
 
-**A collection of production-grade Machine Learning and Natural Language Processing solutions developed during the CODSOFT ML Internship. Features modular pipelines, pre-trained model artifacts, and interactive prediction CLIs.**
+**A collection of production-grade Machine Learning and Natural Language Processing solutions developed during the Machine_Learning Internship. Features modular pipelines, pre-trained model artifacts, and interactive prediction CLIs.**
 
 [Overview](#-overview) • [Task 1: Movie Genre](#-task-1---movie-genre-classification) • [Task 3: Customer Churn](#-task-3---customer-churn-prediction) • [Task 4: SMS Spam](#-task-4---sms-spam-detection) • [Tech Stack](#-technology-stack) • [Repository Structure](#-repository-structure) • [Quick Start](#-quick-start)
 
@@ -18,7 +18,7 @@
 
 ## 📖 Overview
 
-This repository holds end-to-end Machine Learning pipelines built for the **CODSOFT Data Science & Machine Learning Internship**. Each project is engineered with:
+This repository holds end-to-end Machine Learning pipelines built for the **Machine_Learning Data Science & Machine Learning Internship**. Each project is engineered with:
 - **Portable Architecture:** Relative project paths allow seamless execution across any OS without hardcoded dependencies.
 - **Model Persistence:** Serialized `.joblib` pipelines bundling feature extraction and trained estimators for immediate zero-training inference.
 - **Interactive CLI Interfaces:** Dedicated `predict.py` scripts enabling real-time terminal testing with custom inputs.
@@ -30,8 +30,8 @@ This repository holds end-to-end Machine Learning pipelines built for the **CODS
 | Task | Domain | Algorithm | Dataset Size | Primary Metric |
 | :--- | :--- | :--- | :--- | :--- |
 | **[Task 1: Movie Genre](#-task-1---movie-genre-classification)** | NLP / Text Classification | TF-IDF + [LinearSVC](https://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html) | 54,214 records (27 genres) | **57.26% Accuracy** (27 classes) |
-| **[Task 3: Customer Churn](#-task-3---customer-churn-prediction)** | Tabular / Predictive Analytics | [Random Forest Classifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) | 10,000 bank customer profiles | **84.10% Accuracy** |
-| **[Task 4: SMS Spam Detection](#-task-4---sms-spam-detection)** | NLP / Spam Filtering | TF-IDF + [LinearSVC](https://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html) | 5,572 mobile SMS messages | **98.74% Accuracy** |
+| **[Task 2: Customer Churn](#-task-2---customer-churn-prediction)** | Tabular / Predictive Analytics | [Random Forest Classifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) | 10,000 bank customer profiles | **84.10% Accuracy** |
+| **[Task 3: SMS Spam Detection](#-task-3---sms-spam-detection)** | NLP / Spam Filtering | TF-IDF + [LinearSVC](https://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html) | 5,572 mobile SMS messages | **98.74% Accuracy** |
 
 ---
 
@@ -55,7 +55,7 @@ Predicts a movie's genre based purely on its plot synopsis and title.
 
 ---
 
-## 📉 Task 3 - Customer Churn Prediction
+## 📉 Task 2 - Customer Churn Prediction
 
 Identifies bank clients at risk of discontinuing their accounts to enable proactive retention campaigns.
 
@@ -69,13 +69,13 @@ Identifies bank clients at risk of discontinuing their accounts to enable proact
 - **Accuracy:** **84.10%**.
 - **Interactive CLI:**
   ```bash
-  cd Task-3-Customer-Churn-Prediction
+  cd Task-2-Customer-Churn-Prediction
   python predict.py
   ```
 
 ---
 
-## 📱 Task 4 - SMS Spam Detection
+## 📱 Task 3 - SMS Spam Detection
 
 Filters mobile SMS messages into **ham** (legitimate) or **spam** to protect users against phishing and automated spam.
 
@@ -88,7 +88,7 @@ Filters mobile SMS messages into **ham** (legitimate) or **spam** to protect use
 - **Accuracy:** **98.74%** with near-zero false-positive rates on legitimate messages.
 - **Interactive CLI:**
   ```bash
-  cd Task-4-SMS-Spam-Detection
+  cd Task-3-SMS-Spam-Detection
   python predict.py
   ```
 
@@ -109,7 +109,7 @@ Filters mobile SMS messages into **ham** (legitimate) or **spam** to protect use
 ## 📂 Repository Structure
 
 ```text
-codsoft_tasks/
+Machine_Learning_tasks/
 ├── Task-1-Movie-Genre-Classification/
 │   ├── data/                           # Training & test dataset text files
 │   ├── movie_genre_model.joblib        # Pre-trained TF-IDF + LinearSVC pipeline
@@ -118,14 +118,14 @@ codsoft_tasks/
 │   ├── predict.py                      # Interactive single-input CLI tool
 │   └── requirements.txt                # Pinned dependencies
 │
-├── Task-3-Customer-Churn-Prediction/
+├── Task-2-Customer-Churn-Prediction/
 │   ├── data/Churn_Modelling.csv        # Bank customer tabular dataset
 │   ├── churn_model.joblib              # Pre-trained Random Forest model
 │   ├── train_model.py                  # Model training and metric evaluation
 │   ├── predict.py                      # Interactive customer churn risk calculator
 │   └── requirements.txt                # Pinned dependencies
 │
-├── Task-4-SMS-Spam-Detection/
+├── Task-3-SMS-Spam-Detection/
 │   ├── data/spam.csv                   # Labeled SMS spam dataset
 │   ├── spam_model.joblib               # Pre-trained SMS classification pipeline
 │   ├── train_model.py                  # Training script with accuracy reports
@@ -142,8 +142,8 @@ codsoft_tasks/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/sharvan-m/codsoft_tasks.git
-cd codsoft_tasks
+git clone https://github.com/sharvan-m/Machine_Learning_tasks.git
+cd Machine_Learning_tasks
 ```
 
 ### 2. Set Up Virtual Environment
@@ -157,7 +157,7 @@ python -m venv venv
 Navigate to the desired project directory and install dependencies:
 ```bash
 # Example: Running the SMS Spam Detector
-cd Task-4-SMS-Spam-Detection
+cd Task-3-SMS-Spam-Detection
 pip install -r requirements.txt
 
 # Launch interactive inference (uses pre-trained model)
@@ -173,4 +173,4 @@ python train_model.py
 
 This repository is licensed under the [MIT License](LICENSE).
 
-*Developed as part of the CODSOFT Machine Learning Internship by [Sharvan M](https://github.com/sharvan-m).*
+*Developed as part of the Machine_Learning Machine Learning Internship by [Sharvan M](https://github.com/sharvan-m).*
