@@ -10,7 +10,7 @@
 
 **A collection of production-grade Machine Learning and Natural Language Processing solutions developed during the Machine_Learning Internship. Features modular pipelines, pre-trained model artifacts, and interactive prediction CLIs.**
 
-[Overview](#-overview) • [Task 1: Movie Genre](#-task-1---movie-genre-classification) • [Task 3: Customer Churn](#-task-3---customer-churn-prediction) • [Task 4: SMS Spam](#-task-4---sms-spam-detection) • [Tech Stack](#-technology-stack) • [Repository Structure](#-repository-structure) • [Quick Start](#-quick-start)
+[Overview](#-overview) • [Task 1: Movie Genre](#-task-1---movie-genre-classification) • [Task 2: Customer Churn](#-task-2---customer-churn-prediction) • [Task 3: SMS Spam](#-task-3---sms-spam-detection) • [Tech Stack](#-technology-stack) • [Repository Structure](#-repository-structure) • [Quick Start](#-quick-start)
 
 </div>
 
